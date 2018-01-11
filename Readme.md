@@ -6,7 +6,7 @@
 Please clone and install(npm).
 
 ## Parse steps
-1. ### Take screen capture from app using adb.
+1. Take screen capture from app using adb.
 ```js
 const Authenticator = require('index.js')
 let options = {
@@ -14,15 +14,15 @@ let options = {
 }
 let auth = new Authenticator(options)
 auth.saveCapture()
-```
-![](demo/screen.png)
-2. ### Crop and normalize the authentication code.
+```   
+![](demo/screen.png)  
+2. Crop and normalize the authentication code.
 ```js
 await auth.cropCapture() // async function
 auth.cropCapture().then(...) // or promise
 ```
-![](demo/crop.png)
-3. ### Parse the code from the picture from step2.
+![](demo/crop.png)  
+3. Parse the code from the picture from step2.
 ```js
 auth.parseCodeWithOcrad() // use Ocrad.js
 auth.parseCodeWithTesseract() // or Tessera

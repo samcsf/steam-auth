@@ -1,0 +1,16 @@
+{
+  "name": "steam-auth",
+  "version": "1.0.0",
+  "description": "Get steam auth code from mobile app via adb.",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Sam Fu",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^1.6.9",
+    "jimp": "^0.2.28",
+    "ocrad.js": "0.0.1",
+    "shelljs": "^0.7.8"
+  }
+}
